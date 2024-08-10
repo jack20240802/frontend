@@ -55,6 +55,7 @@ async function validateEnvs(appEnvs: Record<string, string>) {
       (_error as ValidationError).errors.forEach((error) => {
         console.log('    ', error);
       });
+      console.log('');
     } else {
       console.log('🚨 Unexpected error occurred during validation.');
       console.error(_error);
